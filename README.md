@@ -14,5 +14,8 @@ https://norielachero.github.io/KALKULATOR/
 ![image](https://github.com/NorielAchero/KALKULATOR/assets/142378544/34e5a0a2-90ec-46c0-91be-6a9d4ef955a4)
 
 
+# Future Updates
+- Responsiveness for Mobile Phones
+
 
 
