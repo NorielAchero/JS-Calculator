@@ -9,8 +9,16 @@ body {
     font-family: 'Roboto', Arial, sans-serif;;
     margin: 0;
     padding: 0;
-    background-color: #181818;
     overflow-x: hidden;
+    transition: background-color 1s;
+}
+
+.dark-mode {
+    background-color: #161616;
+}
+  
+.light-mode {
+    background-color: #cecece;
 }
 
 .center-container{
@@ -21,6 +29,9 @@ body {
     background-color: #404258;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: rgba(16, 16, 16, 0.56) 0px 22px 70px 4px;
+
+
 }
 
 .container {

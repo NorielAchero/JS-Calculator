@@ -70,4 +70,34 @@ document.addEventListener('keydown', function(event) {
     else if(event.keyCode === 8) {
         document.getElementById('clear').click();
     }
-  })
+  });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleModeBtn = document.getElementById('toggleModeBtn');
+    const app = document.getElementById('bg');
+    const centerContainer = document.getElementById('centerContainer'); // Assuming the center container has this ID
+  
+    toggleModeBtn.addEventListener('click', function () {
+      app.classList.toggle('dark-mode');
+      updateMode();
+    });
+  
+    updateMode();
+});
+
+function updateMode() {
+    const isDarkMode = document.getElementById('bg').classList.contains('dark-mode');
+    const centerContainer = document.getElementById('centerContainer');
+    
+    if (isDarkMode) {
+        centerContainer.style.boxShadow = 'rgba(8, 157, 216, 0.56) 0px 22px 70px 4px';
+    } else {
+        centerContainer.style.boxShadow = 'rgba(16, 16, 16, 0.56) 0px 22px 70px 4px';
+    }
+}
+
+
+
+
+

@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="https://media.discordapp.net/attachments/876422377548963890/1186701545434255400/math-512.png?ex=659434f0&is=6581bff0&hm=787298b95cbd799c109b1d1f4b2e194a60802dea06f196ae33faa00537ea0e74&=&format=webp&quality=lossless&width=480&height=480">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/sun.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Dentaku</title>
+    <title>KALKULATOR</title>
  
 </head>
-<body>
-    
-    <div class = "center-container">
+<body id = "bg">
+    <div class = "center-container" id = "centerContainer">
         <div class = "container">
-
             <input type = "text" class = "result" id = "result" readonly>
-
         </div>
 
         <div class = "container">
@@ -46,13 +44,13 @@
                 <button class = "btn" onclick="screenProcessing('+')" id = "+">+</button>
             </div>
             <div class = "buttons">
-                <button value = "" class = "btn button4" onclick="darkLightMode()"><center><i class="gg-sun"></i></center></button>
-                <button  class = "btn button2" onclick="screenProcessing('calculate')" id = "enter">Enter</button>
+                <button class = "btn button4" id = "toggleModeBtn"><center><i class="gg-sun"></i></center></button>
+                <button class = "btn button2" onclick="screenProcessing('calculate')" id = "enter">Enter</button>
                 <button class = "btn button3" onclick="screenProcessing('clear')" id = "clear">Clear</button>
             </div>
-
-
         </div>
+
+
     </div>
 
 </body>
